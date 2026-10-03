@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول رتبه ها</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: 'Vazirmatn', Tahoma, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+            direction: rtl;
+        }
+
+        .table-wrapper {
+            width: 100%;
+            max-width: 500px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .blue-header {
+            background-color: #e6f0ff; /* رنگ آبی روشن مشابه تصویر */
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            border-bottom: 1px solid #b0b0b0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        th, td {
+            border: 1px solid #b0b0b0;
+            padding: 8px 5px;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            font-weight: normal;
+            color: #333;
+        }
+
+        /* استایل اعداد قرمز */
+        .red-text {
+            color: #c00000;
+            font-weight: bold;
+        }
+
+        /* تنظیم عرض ستون‌ها */
+        th:nth-child(1) { width: 25%; }
+        th:nth-child(2) { width: 25%; }
+        th:nth-child(3) { width: 25%; }
+        th:nth-child(4) { width: 25%; }
+
+        td {
+            color: #333;
+        }
+
+        /* خطوط شکسته در سلول‌ها */
+        .line-break {
+            display: block;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="table-wrapper">
+    <div class="blue-header">هر گروه آزمایشی</div>
+    <table>
+        <thead>
+            <tr>
+                <th>گروه آزمایشی</th>
+                <th>رتبه کل در سهمیه نهایی</th>
+                <th>آخرین رتبه مجاز در سهمیه نهایی (دوره روزانه و نوبت دوم)</th>
+                <th>رتبه کشوری بدون اعمال سهمیه</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>  علوم تجربی </td>
+                <td>
+                    <span class="red-text">۱۶۲۷</span> در
+                    <span class="line-break">بین <span class="red-text">۳۲۹۴۵</span></span>
+                    <span class="line-break">نفر</span>
+                </td>
+                <td>
+                    <span class="red-text">۲۶۶۸۸</span>
+                </td>
+                <td>
+                    <span class="red-text">۴۳۳۵۹</span> در
+                    <span class="line-break">بین <span class="red-text">۱۲۵۵۹۶</span></span>
+                    <span class="line-break">نفر</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
